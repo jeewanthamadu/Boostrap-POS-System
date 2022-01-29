@@ -11,92 +11,63 @@
 <body>
 
 <!--------------------nav BAR-------------------->
-<ul class="nav nav-pills">
-    <li class="nav-item">
-        <a class="nav-link " aria-current="page" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="customer.html">Customer</a>
-    </li>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #c8d6e5;">
+        <div class="container-fluid">
+            <a class="navbar-brand" >
+                <img src="assest/images/pos-logo.png" alt="Logo" width="184.3125" height="48.1875">
+            </a>
+            <ul class="nav nav-pills text-white">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">Orders</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="item.html">Items</a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Other</a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">##</a></li>
-            <li><a class="dropdown-item" href="#">###</a></li>
+                <li class="nav-item">
+                    <a class="nav-link " href="order.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="item.html">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Other</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">##</a></li>
+                        <li><a class="dropdown-item" href="#">###</a></li>
 
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">######</a></li>
-        </ul>
-    </li>
-
-
-</ul>
-<script crossorigin="anonymous"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">######</a></li>
+                    </ul>
+                </li>
 
 
+            </ul>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <!--        <ul class="navbar-nav">-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link" href="customer.html">Customer</a>-->
+                <!--          </li>-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link" aria-current="page" href="item.html">Item</a>-->
+                <!--          </li>-->
+                <!--          <li class="nav-item">-->
+                <!--            <a class="nav-link active" href="order.html">Order</a>-->
+                <!--          </li>-->
+                <!--        </ul>-->
+            </div>
+        </div>
+    </nav>
+    <script crossorigin="anonymous"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</header>
 
 
 <main class="container-fluid">
-    <section class="row">
-        <!--   <div class="col-12 col-md-6 col-lg-4">
-               <div class="modal-dialog">
-                   <div class="modal-content">
-                       <div class="modal-body">
-                           <div class="row mt-3">
-                               <div class="col">
-                                   <p class="h2 d-inline">
-                                       Total :
-                                   </p>
-                                   <p class="h2 d-inline">
-                                       2000 LKR
-                                   </p>
-                               </div>
-                           </div>
-                           <div class="row mt-3">
-                               <div class="col">
-                                   <p class="h2 d-inline">
-                                       SubTotal :
-                                   </p>
-                                   <p class="h2 d-inline">
-                                       1800 LKR
-                                   </p>
-                               </div>
-                           </div>
-                           <div class="row mt-3">
 
-                               <div class="col">
-                                   <label for="cash" class="form-label fw-bold">Cash:</label>
-                                   <input type="text" class="form-control" id="cash" placeholder="5000">
-                               </div>
-                               <div class="col">
-                                   <label for="dis" class="form-label fw-bold">Discount:</label>
-                                   <input type="number" class="form-control" id="dis" placeholder="10">
-                               </div>
-                           </div>
-                           <div class="row mt-3">
-
-                               <div class="col">
-                                   <label for="cash" class="form-label fw-bold">Balance:</label>
-                                   <input type="text" class="form-control" id="cash" placeholder="3200">
-                               </div>
-                           </div>
-                           <div class="row mt-3 mb-1">
-                               <button type="button" class="btn btn-success">Purchase</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>-->
-    </section>
 
     <div class="rounded-3 p-3" style="background-color: #c8d6e5; margin-top: 30px;">
         <h1 class="text-center mb-3"><i class="bi bi-box-seam m-2"></i>ITEM MANAGE</h1>
@@ -166,7 +137,6 @@
                             <th> Name</th>
                             <th>Price</th>
                             <th>Qty</th>
-                            <th>Total</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -175,60 +145,51 @@
                             <td>Apple i7</td>
                             <td>50,000</td>
                             <td>1</td>
-                            <td>50,000</td>
                         </tr>
                         <tr>
                             <th>I002</th>
                             <td>Apple i7+</td>
                             <td>70,000</td>
                             <td>1</td>
-                            <td>70,000</td>
                         </tr><tr>
                             <th>I001</th>
                             <td>Apple Xs</td>
                             <td>115,000</td>
                             <td>1</td>
-                            <td>115,000</td>
                         </tr>
                         <tr>
                             <th>I001</th>
                             <td>Apple i7</td>
                             <td>50,000</td>
                             <td>1</td>
-                            <td>50,000</td>
                         </tr>
                         <tr>
                             <th>I002</th>
                             <td>Apple i7+</td>
                             <td>70,000</td>
                             <td>1</td>
-                            <td>70,000</td>
                         </tr><tr>
                             <th>I001</th>
                             <td>Apple Xs</td>
                             <td>115,000</td>
                             <td>1</td>
-                            <td>115,000</td>
                         </tr>
                         <tr>
                             <th>I001</th>
                             <td>Apple i7</td>
                             <td>50,000</td>
                             <td>1</td>
-                            <td>50,000</td>
                         </tr>
                         <tr>
                             <th>I002</th>
                             <td>Apple i7+</td>
                             <td>70,000</td>
                             <td>1</td>
-                            <td>70,000</td>
                         </tr><tr>
                             <th>I001</th>
                             <td>Apple Xs</td>
                             <td>115,000</td>
                             <td>1</td>
-                            <td>115,000</td>
                         </tr>
                         </tbody>
                     </table>
